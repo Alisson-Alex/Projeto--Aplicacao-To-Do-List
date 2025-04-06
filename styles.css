@@ -94,7 +94,24 @@ img {
     background-color: #d1d1d1ce;
     flex-direction: column;
     transition: all 0.3s ease;
+    max-height: 60vh;
+    overflow-y: auto;
    /* Suaviza a transição para os containers de input */
+}
+/* Estilizando a barra de rolagem */
+.box-tasks::-webkit-scrollbar {
+    width: 8px;
+}
+.box-tasks::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.box-tasks::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.box-tasks::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 .input-title, .input-description {
     border: none;
@@ -172,6 +189,7 @@ img {
     height: auto;
     list-style: none;
     margin-top: 20px;
+    padding-right: 5px;
 }
 .task input[type="text"], .task textarea {
     width: 100%;
