@@ -12,7 +12,6 @@ header('Access-Control-Allow-Methods: *'); // Métodos permitidos, * para permit
 header('Access-Control-Allow-Headers: Content-Type'); // Cabeçalhos permitidos (Content-Type, Authorization, etc.)
 
 // Configurações do Banco de Dados
-
 define('DB_HOST', '127.0.0.1:3306');
 define('DB_NAME', 'todo_list');
 define('DB_USER', 'root');

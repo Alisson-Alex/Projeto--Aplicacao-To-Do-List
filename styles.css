@@ -13,6 +13,8 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    max-height: 60vh;
+    overflow-y: auto;
 }
 nav {
     width: 100%;
@@ -94,7 +96,7 @@ img {
     background-color: #d1d1d1ce;
     flex-direction: column;
     transition: all 0.3s ease;
-    max-height: 60vh;
+    max-height: 100vh;
     overflow-y: auto;
    /* Suaviza a transição para os containers de input */
 }
@@ -277,11 +279,25 @@ img {
         width: 100%;
    }
     .button-add-task {
-        width: 50%;
+        width: 90px;
+        font-size: 13px;
    }
     .task input[type="text"], .task textarea, .task button {
         width: 100%;
    }
+
+    .nav-title {
+        font-size: 1.1em;
+    }
+    .task img {
+        height: 20px;
+    }
+    .filter-select {
+        width: 90px;
+    }
+    body {
+        font-size: 13px;
+    }
 }
 #particles-js {
     position: absolute;
