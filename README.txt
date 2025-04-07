@@ -34,11 +34,31 @@ Instruções de configuração:
 
 	Siga estas etapas para configurar o projeto localmente:
 
-1. Clone o Repositório:
+1. Baixe todo conteúdo deste repositório:
 
 	https://github.com/Alisson-Alex/Projeto--Aplicacao-To-Do-List
 
-2. Abra o XAMPP Control Panel:
+2. Coloque os arquivos e pastas no local de sua preferência respeitando a seguinte arquitetura:
+
+pasta-do-projeto/
+│
+├── index.html   
+├── README.txt
+├── scripts.js         
+├── styles.css    
+│
+├── img/               
+│   ├── confirm1.png        
+│   ├── delete1.jpg 
+│   └── edit-icon.png           
+│
+└── api/                
+    ├── .htaccess
+    ├── config.php
+    └── taska.php
+
+
+3. Abra o XAMPP Control Panel:
 	
 	Inicie o servidor MySQL em 'start' (Caso desejar alterar a porta padrão 3306, modifique antes de apertar 'start').
 	Agora configure o diretório onde se encontra o projeto, clicando em 'config' na área do servidor web Apache e clique em 'Apache(httpd.conf)', primeiramente com a tecla Ctrl+F busque por 'DocumentRoot' e altere o caminho para onde está seu projeto, faça o mesmo para a segunda linha onde está '<Directory', Salve o arquivo 'httpd.conf' e feche: 
@@ -46,11 +66,11 @@ Instruções de configuração:
 		*Exemplo: DocumentRoot "C:\xampp\apache\MeusProjetos"
 			 <Directory "C:\xampp\apache\MeusProjetos"
 
-3. Configurar o banco de dados:
+4. Configurar o banco de dados:
 
-	3.1 - Inicie seu servidor local usando XAMPP.
-	3.2 - Abra o MySQL e crie um novo banco de dados chamado todo_list.
-	3.3 - Copie o comando SQL para criar a tabela tasks com as colunas especificas:
+	4.1 - Inicie seu servidor local usando XAMPP.
+	4.2 - Abra o MySQL e crie um novo banco de dados chamado todo_list.
+	4.3 - Copie o comando SQL para criar a tabela tasks com as colunas especificas:
 
 	CREATE DATABASE todo_list;
 	USE todo_list;
@@ -63,7 +83,7 @@ Instruções de configuração:
 		updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE  CURRENT_TIMESTAMP  
 	);
 
-4. Configurar a conexão do banco de dados:
+5. Configurar a conexão do banco de dados:
 	
 	Para alterar a porta, nome, usuário ou senha, abra -api/config.php- e edite com os detalhes de conexão do seu banco de dados:
 
@@ -77,7 +97,7 @@ Instruções de configuração:
 	[...]
 
 
-5. Execute o aplicativo:
+6. Execute o aplicativo:
 	Abra o XAMPP Control Panel novamente, na área do servidor web Apache, clique em 'start' e depois 'Admin' ao lado... Pronto, você será encaminhado para o servidor web.
 
 
